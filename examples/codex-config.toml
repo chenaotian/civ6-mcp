@@ -1,0 +1,10 @@
+# Merge this section into your Codex MCP configuration when ready for live validation.
+# This file does not change your global Codex settings.
+# This absolute executable is for the current workspace; adjust if the project moves.
+[mcp_servers.civ6_fair]
+command = 'F:\product\文明6\fair-civ6-mcp\.venv\Scripts\python.exe'
+args = ['-m', 'civ6_fair_mcp']
+cwd = 'F:\product\文明6\fair-civ6-mcp'
+startup_timeout_sec = 20
+tool_timeout_sec = 45
+enabled_tools = ['get_rules', 'query_manual', 'get_game_status', 'get_player_state', 'get_diplomacy', 'observe_area', 'list_options', 'inspect_game', 'get_pending_decisions', 'wait_for_change', 'get_session_history', 'act', 'run_lua']

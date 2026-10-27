@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "base",
+      "title": "文明 VI 本体官方手册",
+      "language": "zh-Hant",
+      "url": "https://downloads.2kgames.com/civilization/vi/manuals/asia/CIV_VI_Extended_Manual_%28Trad_Chinese%29_PC%28For_TW%29_SM.pdf",
+      "pdf_file": "base_zh_Hant.pdf",
+      "index_file": "base_zh_Hant.json",
+      "sha256": "6e87fdccbef03a2ed3cf6ebcfd6fb539ce326a78b3a58b6a597612484bb9159d",
+      "coverage": "本体规则；搭配资料片补充手册使用。",
+      "edition_note": "官方繁体中文版，发行时期文档；不保证与后续补丁一致。",
+      "verified_date": "2026-10-27"
+    },
+    {
+      "id": "rise_and_fall",
+      "title": "Civilization VI: Rise and Fall 官方手册",
+      "language": "en",
+      "url": "https://steamcdn-a.akamaihd.net/steam/apps/645402/manuals/CIV_VI_EXP_ONLINE_MANUAL_ENG.PDF",
+      "pdf_file": "rise_and_fall_en.pdf",
+      "index_file": "rise_and_fall_en.json",
+      "sha256": "956f83e1ebc0ab33dfa51314bc7e418bb0d095657eb9850b63d7600e90fdadff",
+      "coverage": "迭起兴衰新增机制；是补充手册，不替代本体手册。",
+      "edition_note": "Steam 商店提供的官方英文版；尚未核实官方中文 PDF，不保证与后续补丁一致。",
+      "verified_date": "2026-10-27"
+    },
+    {
+      "id": "gathering_storm",
+      "title": "文明 VI：风云变幻官方手册",
+      "language": "zh-Hant",
+      "url": "https://cdn.2kgames.com/manuals/civilization-vi/gathering_storm/2KGSGP_CIV6_Gathering_Storm_PC_Online_Manual_TW.pdf",
+      "pdf_file": "gathering_storm_zh_Hant.pdf",
+      "index_file": "gathering_storm_zh_Hant.json",
+      "sha256": "d6003abd9030780a37c60aec3d44feebaade2377fef189846577d8070b350a43",
+      "coverage": "风云变幻新增与调整的机制；搭配本体与迭起兴衰手册使用。",
+      "edition_note": "官方繁体中文版，发行时期文档；不包括后续游戏模式，不保证与当前补丁一致。",
+      "verified_date": "2026-10-27"
+    }
+  ]
+}

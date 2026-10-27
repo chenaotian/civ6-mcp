@@ -1,0 +1,36 @@
+Protocol reference: https://github.com/lmwilki/civ6-mcp
+Files consulted: src/civ_mcp/tuner_client.py, src/civ_mcp/connection.py
+Retrieved 2026-10-22. Transport is independently hardened for this project.
+
+Feature comparison retrieved 2026-10-27:
+https://github.com/lmwilki/civ6-mcp/tree/dd2019056371b92ea4854e879ddf05a8cad95e8a
+Archive SHA256: 4b10ec3fc9e27078eaacd9cc187259e393fd8a55a1ef67052661dfa7b8969418
+Additional files consulted: src/civ_mcp/server.py, end_turn.py, game_state.py,
+spatial.py, diary.py, game_lifecycle.py, game_over_watchdog.py and lua/*.py.
+Feature implementations are independently adapted to the installed stock UI,
+with local-player permissions and fixed projections for regular interfaces.
+Since version 0.4.2 this project also provides a separate, explicitly last-resort
+run_lua endpoint. It is not a sandbox or an automatic hidden-information filter;
+see FALLBACK_LUA.md for its usage constraints and technical limits.
+
+MIT License
+
+Copyright (c) 2026 Liam Wilkinson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

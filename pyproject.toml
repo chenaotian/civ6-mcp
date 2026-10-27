@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "civ6-fair-mcp"
+version = "0.4.3"
+description = "A conservative player-perspective Civilization VI MCP gateway"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.26,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10", "pytest-asyncio>=0.24,<2", "lupa>=2.6,<3"]
+
+[project.scripts]
+civ6-fair-mcp = "civ6_fair_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/civ6_fair_mcp"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"docs/UPSTREAM_LICENSE.txt" = "civ6_fair_mcp/UPSTREAM_LICENSE.txt"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/", "tests/", "docs/", "examples/", "scripts/", "README.md", "pyproject.toml", "uv.lock"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"

@@ -1,0 +1,38 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.coverage
+.coverage.*
+htmlcov/
+
+# Build output and dependency cache
+build/
+dist/
+.uv-cache/
+
+# Local game references, official texts and test/session output
+artifacts/
+references/
+manuals/
+*.Civ6Save
+*.Civ6Map
+*.log
+
+# Local secrets and machine-specific overrides
+.env
+.env.*
+!.env.example
+*.local.toml
+
+# Editor / operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
